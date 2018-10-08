@@ -1,24 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IJT-If-Yts">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Potato-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uglySpud" translatesAutoresizingMaskIntoConstraints="NO" id="Vm8-6D-RM1">
+                                <rect key="frame" x="62" y="155" width="250" height="356"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Potato" image="potatoUnselected" selectedImage="potatoSelected" id="nei-0L-J7y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1080.8" y="-376.46176911544228"/>
+        </scene>
+        <!--Hobbies-->
+        <scene sceneID="mdO-oE-awM">
+            <objects>
+                <viewController id="D1c-Xy-SY5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mMk-ma-FNj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Printer" translatesAutoresizingMaskIntoConstraints="NO" id="zUg-Ia-gDQ">
+                                <rect key="frame" x="86" y="199" width="202" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.26424901020000002" blue="0.13870963040000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="SES-i6-a91"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hobbies" image="hobbiesUnselected" selectedImage="hobbiesSelected" id="VRW-Hb-aPS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FqT-wn-kEJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1880.8" y="-237.03148425787109"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="swa-iL-BSo">
+            <objects>
+                <viewController id="Vwb-Rx-p3N" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="US8-qD-aHV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorite Color: Red" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eS3-gM-dGm">
+                                <rect key="frame" x="115" y="87" width="145" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorite Food: Pizza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fo-6c-hSf">
+                                <rect key="frame" x="110" y="135" width="154" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favorite Teacher: Nic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CU-rk-AdB">
+                                <rect key="frame" x="107" y="189" width="161" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.35424919978115044" blue="0.97473304596519561" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="0f6-ap-doV"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="favoritesUnselected" selectedImage="favoritesSelected" id="Vd0-mm-d3l"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zo2-0D-DyA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080.8" y="703.89805097451278"/>
+        </scene>
+        <!--Family-->
+        <scene sceneID="vgU-nN-Crx">
+            <objects>
+                <viewController id="u7Y-ni-KNi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ThE-Ok-D3w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="tFg-uI-NrZ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Family" image="familyUnselected" selectedImage="familySelected" id="fYB-wi-QYx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Ho-gb-wxD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1881" y="515"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="C4k-9J-VvY">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="IJT-If-Yts" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oq1-eq-Z0a">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="D1c-Xy-SY5" kind="relationship" relationship="viewControllers" id="VJ3-Ry-eo2"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="xL1-QJ-qc2"/>
+                        <segue destination="u7Y-ni-KNi" kind="relationship" relationship="viewControllers" id="Aw4-Xp-wMv"/>
+                        <segue destination="Vwb-Rx-p3N" kind="relationship" relationship="viewControllers" id="xXC-Yz-fhV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gvv-3b-jUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="164.16791604197903"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Printer" width="97" height="129"/>
+        <image name="familySelected" width="25" height="25"/>
+        <image name="familyUnselected" width="25" height="25"/>
+        <image name="favoritesSelected" width="25" height="25"/>
+        <image name="favoritesUnselected" width="25" height="25"/>
+        <image name="hobbiesSelected" width="25" height="25"/>
+        <image name="hobbiesUnselected" width="25" height="25"/>
+        <image name="potatoSelected" width="25" height="25"/>
+        <image name="potatoUnselected" width="25" height="25"/>
+        <image name="uglySpud" width="101" height="125"/>
+    </resources>
 </document>
